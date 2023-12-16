@@ -1,0 +1,19 @@
+meta {
+  name: add comment to post
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:3000/api/post/comment
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "6578dc6dc8a5838ae0781d82",
+    "author": "6578b1cccebdea8ffd0d61ef",
+    "message": "Test post message with comment 2"
+  }
+}

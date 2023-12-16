@@ -1,0 +1,18 @@
+meta {
+  name: add like to post
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:3000/api/post/like
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "6578ca1e7f710f55c66fc4a3",
+    "author": "6578b1cccebdea8ffd0d61ef"
+  }
+}

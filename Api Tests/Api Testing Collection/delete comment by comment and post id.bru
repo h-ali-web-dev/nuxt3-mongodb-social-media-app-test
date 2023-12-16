@@ -1,0 +1,16 @@
+meta {
+  name: delete comment by comment and post id
+  type: http
+  seq: 12
+}
+
+delete {
+  url: http://localhost:3000/api/post/comment?id=6578cbf37f710f55c66fc4a6&commentId=65798d76db863f26e0ef3a60
+  body: none
+  auth: none
+}
+
+query {
+  id: 6578cbf37f710f55c66fc4a6
+  commentId: 65798d76db863f26e0ef3a60
+}

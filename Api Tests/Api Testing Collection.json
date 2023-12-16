@@ -1,0 +1,162 @@
+{
+  "info": {
+    "name": "Api Testing Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "add comment to post",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/api/post/comment",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"6578dc6dc8a5838ae0781d82\",\n  \"author\": \"6578b1cccebdea8ffd0d61ef\",\n  \"message\": \"Test post message with comment 2\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "add like to post",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/api/post/like",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"6578ca1e7f710f55c66fc4a3\",\n  \"author\": \"6578b1cccebdea8ffd0d61ef\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "create post",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/api/post",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"author\" : \"6578b1cccebdea8ffd0d61ef\",\n  \"message\":\"Test post message with comment\",\n  \"comments\": {\n    \"author\": \"6578b1cccebdea8ffd0d61ef\",\n    \"message\": \"test comment\"\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "create user",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/api/user",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"testingUserr\",\n  \"email\": \"tests@testr.com\",\n  \"password\": \"password\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "delete comment by comment and post id",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/api/post/comment?id=6578cbf37f710f55c66fc4a6&commentId=65798d76db863f26e0ef3a60"
+      }
+    },
+    {
+      "name": "delete post by id",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/api/post/id?id=6578d825500c154e89979e71"
+      }
+    },
+    {
+      "name": "delete user by id",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/api/user?id=6578e35c7d10adbd113172b1"
+      }
+    },
+    {
+      "name": "get post by id",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/post/id?id=6578cbf37f710f55c66fc4a6"
+      }
+    },
+    {
+      "name": "get posts",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/post"
+      }
+    },
+    {
+      "name": "get user by id",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/user?id=6578b1cccebdea8ffd0d61ef"
+      }
+    },
+    {
+      "name": "get user by username",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/user?username=username",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"username\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "get users",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/user/users"
+      }
+    }
+  ],
+  "variable": []
+}

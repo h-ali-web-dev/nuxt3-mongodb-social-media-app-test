@@ -1,0 +1,22 @@
+meta {
+  name: create post
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3000/api/post
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "author" : "6578b1cccebdea8ffd0d61ef",
+    "message":"Test post message with comment",
+    "comments": {
+      "author": "6578b1cccebdea8ffd0d61ef",
+      "message": "test comment"
+    }
+  }
+}
